@@ -1,2 +1,81 @@
 @charset "utf-8";
 /*custom styles*/
+
+.topRow {
+    width: 100%;
+    padding: 30px 40px 0px;
+    position: fixed;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.containers {
+    background: url('../img/triangle.svg');
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 20%;
+}
+
+.containersWrap {
+    background: url('../img/triangleRight.svg');
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+    width: 100%;
+    min-height: 20%;
+    text-align: right;
+}
+
+.bottomRow {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    line-height: 5; }
+
+.brdescriptor {
+    padding: 0px 40px 0px 0px;
+}
+
+.contentPage {
+    padding-top: 20vh;
+    min-height: 100vh;
+    width: 100%;
+    top: 15vh;
+}
+
+.contentPage h1 {
+    width: 100%;
+    padding: 3vh 0vh 3vh 5vh;
+    text-transform: uppercase;
+}
+
+.SlideText {
+width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    justify-items: center;
+    text-align: start;
+    font-size: 150%;
+    font-weight: 200;
+    max-width: 670px;
+    padding: 10vh 0vh 10vh 5%;
+}
+.SlidePic {
+
+   width: 50%;max-width: 470px;
+ /*   max-width: 470px;
+    display: flex;
+    right: 0;position: absolute;
+    justify-items: flex-end;*/
+}
