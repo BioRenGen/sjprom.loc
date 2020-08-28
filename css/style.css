@@ -1,6 +1,17 @@
 @charset "utf-8";
 /*custom styles*/
-
+@font-face {
+  font-family: "Intro";
+  src: url("../fonts/Intro.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Intro.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Intro.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/Intro.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/Intro.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Intro.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/Intro.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
 .topRow {
     width: 100%;
     padding: 30px 40px 0px;
@@ -8,12 +19,12 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;color: #555555;
 }
 
 .containers {
     background: url('../img/triangle.svg');
-    position: absolute;
+    position: fixed;
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
@@ -22,7 +33,7 @@ body {
 
 .containersWrap {
     background: url('../img/triangleRight.svg');
-    position: absolute;
+    position: fixed;
     bottom: 0;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -35,7 +46,7 @@ body {
 }
 
 .bottomRow {
-    position: absolute;
+    position: fixed;
     width: 100%;
     bottom: 0;
     line-height: 5; }
@@ -55,13 +66,15 @@ body {
     width: 100%;
     padding: 3vh 0vh 3vh 5vh;
     text-transform: uppercase;
+    font-family: "Intro";
+    font-size: 19px;
 }
 
 .SlideText {
 width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+   /* display: flex;*/
     -ms-flex-line-pack: distribute;
     align-content: space-around;
     justify-items: center;
@@ -73,9 +86,26 @@ width: 50%;
 }
 .SlidePic {
 
-   width: 50%;max-width: 470px;
- /*   max-width: 470px;
-    display: flex;
-    right: 0;position: absolute;
-    justify-items: flex-end;*/
+   width: 50%;
+padding: 0;
+    margin: 0;
+    z-index: -1;
+    
 }
+
+/*
+.slide2,
+.slide3{
+       background-repeat: no-repeat;background-size: cover;
+  
+}
+.slide2 {
+    background: url('../img/top-1.gif');
+
+}
+
+.slide3 {
+    background: url("../img/5.png");
+
+}
+*/
