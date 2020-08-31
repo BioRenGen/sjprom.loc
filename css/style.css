@@ -282,8 +282,8 @@ h1 {
 @media screen and (max-width:720px) {
 
     .SlideText {
-        width: 100%;
-        background: red;
+        width: 90%;
+     
         float: left;
         margin: 0 auto;
         padding: 0;
