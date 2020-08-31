@@ -67,8 +67,9 @@ body {
 }
 
 .contentPage {
-    padding-top: 20vh;
-    min-height: 100vh;
+    padding-top: 15vh;
+    min-height: 70vh;
+
     width: 100%;
     top: 15vh;
 }
@@ -97,6 +98,7 @@ body {
     font-weight: 200;
     max-width: 670px;
     padding: 10vh 0vh 10vh 5%;
+    text-indent: 0 !important;
 }
 
 .SlidePic {
@@ -195,13 +197,13 @@ body {
     margin: 0 auto;
 }
 
-.grid{
-      display: -webkit-box;
+.grid {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items:flex-end;
+    align-items: flex-end;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: space-around;
@@ -211,7 +213,7 @@ body {
 }
 
 .Contact ul li a,
-.brdescriptor a{
+.brdescriptor a {
     color: #555555;
     font-weight: 600;
     line-height: 1.5;
@@ -224,35 +226,87 @@ body {
 
 .case {
     width: 100%;
-    height:inherit;
-        display: contents;
+    height: inherit;
+    display: contents;
     border: 1px #000 solid;
     text-transform: uppercase;
-    
+
 }
+
 .case span {
-        font-weight: bold;
+    font-weight: bold;
 }
 
 .caseItem {
-   /* display: block;
+    /* display: block;
    text-align: center;
     margin:10px;
     vertical-align: bottom;*/
     max-width: 300px;
     text-align: center;
     position: relative;
-    margin: 0 auto; 
+    margin: 0 auto;
     text-transform: uppercase;
 }
-.caseItem span{
+
+.caseItem span {
     font-weight: bold;
 }
-.caseItem > span{
 
-}
-
-h1{
+h1 {
     display: none;
 }
 
+.CaserItems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: -webkit-right;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:720px) {
+
+    .SlideText {
+        width: 100%;
+        background: red;
+        float: left;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .FinalPic {
+        max-width: 250px;
+    }
+
+    .Contact ul li {
+        min-width: 200px;
+        text-align: center;
+
+    }
+
+    .tableCust tr {
+        white-space: nowrap;
+        font-size: 15px;
+
+    }
+
+    .FinalPic img {
+        max-width: 350px;
+        width: 80%;
+    }
+}
