@@ -68,8 +68,8 @@ body {
 
 .contentPage {
  /*   padding-top: 15vh;*/
-    min-height: 80vh;
-
+    min-height: 90vh;
+height: 100%;
     width: 100%;
     top: 15vh;
 }
@@ -281,18 +281,16 @@ body {
 
 @media screen and (max-width:720px) {
     .SlidePic {
-        /*display: none;*/
+          width: 90%;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        margin: 0 auto;
     }
     .SlideText {
-      /*  width: 90%;
-     
-        float: left;
-        margin: 0 auto;
-        padding: 0;*/
-            padding: unset;
+padding: unset;
     margin: unset;
-        width: 80%;
-    /* margin: 0 aut*/
+    width: 85%;
+    margin: 0 auto;
     }
 
     .FinalPic {
@@ -316,4 +314,8 @@ body {
         width: 80%;
     }
   
+    .CaserItems{
+        display: block;
+        margin: 0 auto;
+    }
 }
