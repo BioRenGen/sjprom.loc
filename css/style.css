@@ -39,6 +39,7 @@ body {
     background-size: contain;
     width: 100%;
     min-height: 20%;
+
 }
 
 .containersWrap {
@@ -155,10 +156,12 @@ body {
 
 .tableCust tr:nth-child(odd) {
     background: #ddd;
+
 }
 
 .tableCust tr:hover {
     background: #d3d3d3;
+
 }
 
 .tableCust tr td:nth-child(2n) {
@@ -326,4 +329,26 @@ video {
         display: block;
         margin: 0 auto;
     }
+}
+.logoCase {
+    position: relative;
+    width: 50%;
+    max-width: 250px;
+border: 1px red solid;
+}
+
+.prevCase {
+    display: flex;
+    align-items: center;
+ 
+}
+
+.banners {
+    width: 100%;
+height: 100vh;
+    background: red;
+}
+.banners img {
+    width: 100vw;
+    height: 100vh;
 }
