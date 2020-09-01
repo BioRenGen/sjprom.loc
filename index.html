@@ -14,14 +14,25 @@
     <link href="css/reset.css" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    
+    
+    
+    
+    
+ <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+    
+    
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" />
 </head>
 
 <body>
     <div class="containers">
-        <div class='topRow'>
+        <div class='topRow  wow animate__fadeIn'>
             <img src="img/logo.png" alt="logo">
         </div>
     </div>
@@ -32,12 +43,12 @@
     <!--------TOP_END---------------------->
 
     <div class="contentPage pager">
-        <h1>ООО «СТРОЙЖИЛПРОМ»
+        <h1 class="wow slideInLeft">ООО «СТРОЙЖИЛПРОМ»
         </h1>
 
 
 
-        <div class='CaserItems'>
+        <div class='CaserItems '>
 
             <div class="SlideText ">
 
@@ -65,7 +76,7 @@
 
 
         <div class='CaserItems'>
-            <div class="SlideText ">
+            <div class="SlideText">
                 - динамично развивающееся компания на рынке строительства и проектирования по <b>Москве и Московской области.</b>
 
                 - приняла участие в <b>46</b> государственных тендерах на общую сумму более чем 2 221 396 039 руб. и в 18 вышла <b>победителем!</b>
@@ -114,13 +125,13 @@
 
     <!--------PAGE---------------->
     <div class="contentPage " style="padding: 0vh 0vh 0vh;">
-        <h1>СПЕЦИАЛИЗАЦИЯ<br>
+   
+
+        <div class='Slide'>
+     <h1>СПЕЦИАЛИЗАЦИЯ<br>
             ООО “СТРОЙЖИЛПРОМ”:
 
         </h1>
-
-        <div class='Slide'>
-
         <img src="img/SJ2.png">
         
         <div class="SlideDes">РЕМОНТ 
@@ -509,9 +520,14 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
-
+<script src="js/wow.min.js">
     <!--connect oter plugins for CDN-->
-
+    </script>
+    
+    
+<script>
+new WOW().init();
+</script>
     <script>
         $(document).ready(function() {
 

@@ -394,6 +394,16 @@ video {
     -ms-flex-pack: left;
     justify-content: left;
 }
+.Slide h1{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -ms-flex-line-pack:stretch;
+    align-content:stretch;
+}
 
 .Slide img {
     width: 20%;
@@ -452,7 +462,7 @@ video {
     }
 
     .tableCust td {
-        padding: 15px 5px 15px 5px;
+        padding: 15px 5px 15px 25px;
         font-weight: 300;
     }
 
@@ -497,13 +507,10 @@ video {
     .FinalPic {
         text-align: center;
         margin: 0 auto;
+        max-width: inherit;
+    }
+    .topRow{
+        visibility: inherit !important;
     }
 }
 
-.copyright {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 50%;
-    line-height: 3;
-}
