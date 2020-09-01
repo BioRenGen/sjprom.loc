@@ -113,26 +113,37 @@
 
 
     <!--------PAGE---------------->
-    <div class="contentPage ">
+    <div class="contentPage " style="padding: 0vh 0vh 0vh;">
         <h1>СПЕЦИАЛИЗАЦИЯ<br>
             ООО “СТРОЙЖИЛПРОМ”:
 
         </h1>
-        <!--div class="banners">
 
-            <div class="caseItem">
-                <img src="img/prev1.png"></div>
-            <div class="caseItem">
-                <img src="img/prev2.png"></div>
-            <div class="caseItem">
-                <img src="img/prev3.png"></div>
-            <div class="caseItem">
-                <img src="img/prev4.png"></div>
+        <div class='Slide'>
 
+        <img src="img/SJ2.png">
+        
+        <div class="SlideDes">РЕМОНТ 
+ОФИСОВ И КВАРТИР
+</div>
+        </div>
 
+        
+        
+        
+        
+  <!--div class="item"><img src='img/prev1.png'></div>
 
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src='img/prev1.png'></div>
+            <div class="item"><img src='img/prev2.png'></div>
+            <div class="item"><img src='img/prev3.png'></div>
+            <div class="item"><img src='img/prev4.png'></div>
 
         </div-->
+
+
+
     </div>
     <!-------------------------------------------->
 
@@ -236,7 +247,7 @@
     <div class="contentPage">
         <h1>НАШИ ПРОИЗВОДСТВЕННЫЕ МОЩНОСТИ
         </h1>
-        <div class="owl-carousel" style="
+        <div class="owl-carousel owl-theme" style="
     border: 020px #f4f4f4 solid;
 ">
             <div class="caseItem">
@@ -477,6 +488,8 @@
 
             <img src="img/5.png" alt="">
         </div>
+        
+        <!--div class="copyright">SJ PROM 2020 </div-->
     </div>
 
 
@@ -501,6 +514,18 @@
 
     <script>
         $(document).ready(function() {
+
+            $('.owl-carousel-ert').owlCarousel({
+                autoplay: true,
+                items: 1,
+                    autoplayTimeout: 2000,
+                responsive: {
+                    1400: {
+                        items: 1
+                    }
+                 
+                }
+            });
             $(".owl-carousel").owlCarousel({
 
                 autoplay: true,
