@@ -476,7 +476,7 @@ video {
 
     .containers {
         position: fixed;
-        min-height: 8rem;
+        min-height: 2rem;
         text-align: center;
         background: #f4f4f4;
         width: 100%;
@@ -555,8 +555,12 @@ video {
 
     .topRow {
         visibility: inherit !important;
+        width: 40%;
+        margin: 0 auto;
+       padding: 5px 0 0 0;
+    position: relative;
     }
-
+    
     .SlidePic {
         width: 100%;
         padding-top: 10vh;
