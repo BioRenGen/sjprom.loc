@@ -166,7 +166,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     font-family: "Intro";
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     color: #f4f4f4;
 }
@@ -488,14 +488,22 @@ video {
     .contentPage h1,
     h1{
         width: 90%;
-        padding: 3vh 3vh 5vh;
+        /*padding: 3vh 3vh 5vh;*/
         text-transform: uppercase;
         font-family: "Intro";
-        font-size: 150%;
+        font-size: 130%;
         text-align: center;
         margin: 0 auto;
+        padding: 1vh !important;
     }
-
+    h1{
+         text-transform: uppercase;
+        font-family: "Intro";
+        font-size: 130%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 1vh !important;
+    }
     .tableCust td {
         padding: 15px 5px 15px 25px;
         font-weight: 300;
@@ -559,6 +567,15 @@ video {
 
     video {
         width: 100%;
+    }
+    .tableCust tr td {
+        padding: 5px !important;
+        font-size: 12px;
+        line-height: 3;
+        font-weight: 600;
+    }
+    .map h1{
+        font-size: 150%;line-height: 2.5;
     }
 }
 
