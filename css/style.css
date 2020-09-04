@@ -75,7 +75,7 @@ body {
 }
 
 .contentPage {
-   min-height: 90vh;
+    min-height: 90vh;
     height: 100%;
     width: 100%;
     top: 15vh;
@@ -160,7 +160,7 @@ body {
 
 .tableCust {
     margin: 0 auto;
-  /*  width: 80%;*/
+    /*  width: 80%;*/
     width: 100%;
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -302,6 +302,7 @@ video {
     width: 50%;
     max-width: 250px;
 }
+
 .prevCase {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -310,8 +311,8 @@ video {
     -ms-flex-align: center;
     align-items: center;
 }
-.
-.banners img {
+
+. .banners img {
     width: 100vw;
     height: 100vh;
 }
@@ -321,6 +322,7 @@ video {
     min-height: 100vh;
     display: block;
 }
+
 .Slide {
     width: 100%;
     height: auto;
@@ -359,12 +361,14 @@ video {
 .containersWrap {
     display: none;
 }
+
 .slideImg {
     padding: 0;
     margin: 0;
     height: auto;
     width: 100%;
 }
+
 .SlideDes {
     background: #f4f4f4;
     font-family: 'Intro';
@@ -381,9 +385,11 @@ video {
     -webkit-box-shadow: 1px 4px 10px #232323;
     box-shadow: 1px 4px 10px #555;
 }
+
 .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 5vh;
 }
+
 @media screen and (max-width:720px) {
     .SlidePic {
         width: 90%;
@@ -399,31 +405,36 @@ video {
         width: 85%;
         margin: 0 auto;
     }
+
     .FinalPic {
         max-width: 250px;
     }
+
     .Contact ul li {
         min-width: 200px;
         text-align: center;
     }
+
     .tableCust tr {
         white-space: nowrap;
         font-size: 15px;
     }
+
     .FinalPic img {
         max-width: 350px;
         width: 80%;
     }
+
     .CaserItems {
         display: block;
         margin: 0 auto;
     }
+
     .Slide {
         min-height: 50vh !important
-    }}
+    }
+}
 
-
-/*
 @media screen and (max-width: 625px) {
     .contentPage {
         min-height: 50vh;
@@ -431,6 +442,7 @@ video {
         width: 100%;
         top: 15vh;
     }
+
     .containers {
         position: fixed;
         min-height: 2rem;
@@ -441,6 +453,7 @@ video {
         -webkit-box-shadow: 1px 1px 6px #5f5f5f5f;
         box-shadow: 1px 1px 6px #5f5f5f5f;
     }
+
     .contentPage h1,
     h1 {
         width: 90%;
@@ -451,6 +464,7 @@ video {
         margin: 0 auto;
         padding: 1vh !important;
     }
+
     h1 {
         text-transform: uppercase;
         font-family: "Intro";
@@ -459,18 +473,22 @@ video {
         margin: 0 auto;
         padding: 1vh !important;
     }
+
     .tableCust td {
         padding: 15px 5px 15px 25px;
         font-weight: 300;
     }
+
     .tableCust tr {
         font-size: 13px;
     }
+
     .SlideText {
         font-size: 135%;
         line-height: 1.7;
         width: 90%;
     }
+
     .tableCust {
         margin: 0 auto;
         width: 98%;
@@ -479,68 +497,82 @@ video {
     .containersWrap {
         display: none;
     }
+
     .finalPage {
         display: block;
         padding: 5%;
     }
+
     .verticalLine {
         display: none;
     }
+
     .Contact {
         line-height: 4;
-            width: 100%;
+        width: 100%;
         display: block;
         padding-top: 5vh;
         padding-bottom: 5vh;
-      
-    font-size: 200%;
-    text-transform: uppercase;
-    text-decoration: none;
+
+        font-size: 200%;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
 }
-    }
-    .FinalPic {
-        text-align: center;
-        margin: 0 auto;
-        max-width: inherit;
-    }
-    .topRow {
-        visibility: inherit !important;
-        width: 40%;
-        margin: 0 auto;
-        padding: 5px 0 0 0;
-        position: relative;
-    }
-    .SlidePic {
-        width: 100%;
-        padding-top: 10vh;
-        padding-bottom: 10vh;
-        margin: 0 auto;
-        text-align: center;
-    }
-    video {
-        width: 100%;
-    }
-    .tableCust tr td {
-        padding: 5px !important;
-        font-size: 12px;
-        line-height: 3;
-        font-weight: 600;
-    }
 
-    .map h1 {
-        font-size: 150%;
-        line-height: 2.5;
-    }
-    .Slide {
-        min-height: 30vh !important
-    }
-
-    .SlideDes {
-        padding: 1vw;
-        -webkit-box-shadow: 1px 2px 4px #555;
-        box-shadow: 1px 2px 4px #555;
-        bottom: 0;
-    }
-
+.FinalPic {
+    text-align: center;
+    margin: 0 auto;
+    max-width: inherit;
 }
-*/
+
+.topRow {
+  /*  visibility: inherit !important;
+    width: 40%;
+    margin: 0 auto;
+    padding: 5px 0 0 0;
+    position: relative;*/
+    
+}
+.topRow {
+    visibility: inherit !important;
+    /* width: 40%; */
+    margin: 0 auto;
+    /* padding: 5px 0 0 0; */
+    position: relative;
+}
+.SlidePic {
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+}
+
+.tableCust tr td {
+    padding: 5px !important;
+    font-size: 12px;
+    line-height: 3;
+    font-weight: 600;
+}
+
+.map h1 {
+    font-size: 150%;
+    line-height: 2.5;
+}
+
+.Slide {
+    min-height: 30vh !important
+}
+
+.SlideDes {
+    padding: 1vw;
+    -webkit-box-shadow: 1px 2px 4px #555;
+    box-shadow: 1px 2px 4px #555;
+    bottom: 0;
+}
+}
