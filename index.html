@@ -29,99 +29,150 @@
 </head>
 
 <body>
+    <!--loader begin-->
+
     <div id="background"></div>
     <style>
-/*loader*/
-#background{
-  display:block;
-  position:fixed;
-  width:100%;
-  height:100%;
-  background-color: #000;
-  background: -ie-radial-gradient(center, ellipse cover, #FCBA10 1%,#FCBA10 100%);
-    z-index: 999999999999999999999999;
-}
+        /*loader*/
+        #background {
+            display: block;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            background: -ie-radial-gradient(center, ellipse cover, #FCBA10 1%, #FCBA10 100%);
+            z-index: 999999999999999999999999;
+        }
 
-#logocontainer{
-  display:block;
-  position:fixed;
-  top:50%;
-  left:50%;
-  width:24vh;
-  height:24vh;
-  margin-left:-17vh;
-  margin-top:-17vh;
-  overflow:hidden;
-  -webkit-transition:background-color 500ms;
-  transition:background-color 500ms;
-  cursor:pointer;
-       z-index: 99999999999999999999999999;
-}
+        #logocontainer {
+            display: block;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 24vh;
+            height: 24vh;
+            margin-left: -17vh;
+            margin-top: -17vh;
+            overflow: hidden;
+            -webkit-transition: background-color 500ms;
+            transition: background-color 500ms;
+            cursor: pointer;
+            z-index: 99999999999999999999999999;
+        }
 
-#pelogo{
-  display: block;
-  position: absolute;
-  left: 2vh;
-  top: 2vh;
-  width: 20vh;
+        #pelogo {
+            display: block;
+            position: absolute;
+            left: 2vh;
+            top: 2vh;
+            width: 20vh;
 
-  height: 20vh;
-  background: #FCBA10;
-  background: linear-gradient(135deg, #FCBA10 0%,#FCBA00 100%);
-  background-size: contain;
-  font-family: 'Intro', sans-serif;
-  font-size: 10vh;
-  font-weight: bold;
-  color: #F4f4f4;
-  text-align: center;
-  line-height: 20vh;
-}
+            height: 20vh;
+            background: #FCBA10;
+            background: linear-gradient(135deg, #FCBA10 0%, #FCBA00 100%);
+            background-size: contain;
+            font-family: 'Intro', sans-serif;
+            font-size: 10vh;
+            font-weight: bold;
+            color: #F4f4f4;
+            text-align: center;
+            line-height: 20vh;
+        }
 
-.loader{
-  display:block;
-  position:absolute;
-  background-color:#F4f4f4;
-}
+        .loader {
+            display: block;
+            position: absolute;
+            background-color: #F4f4f4;
+        }
 
-@-webkit-keyframes slide1{
-  50%{width:31vh; margin-left:0;}
-  100%{margin-left:31vh;}
-}
+        @-webkit-keyframes slide1 {
+            50% {
+                width: 31vh;
+                margin-left: 0;
+            }
 
-@keyframes slide1{
-  50%{width:31vh; margin-left:0;}
-  100%{margin-left:31vh;}
-}
+            100% {
+                margin-left: 31vh;
+            }
+        }
 
-@-webkit-keyframes slide2{
-  50%{height:32vh; margin-top:0;}
-  100%{margin-top:32vh;}
-}
+        @keyframes slide1 {
+            50% {
+                width: 31vh;
+                margin-left: 0;
+            }
 
-@keyframes slide2{
-  50%{height:32vh; margin-top:0;}
-  100%{margin-top:32vh;}
-}
+            100% {
+                margin-left: 31vh;
+            }
+        }
 
-@-webkit-keyframes slide3{
-  50%{width:32vh; margin-right:0;}
-  100%{margin-right:32vh;}
-}
+        @-webkit-keyframes slide2 {
+            50% {
+                height: 32vh;
+                margin-top: 0;
+            }
 
-@keyframes slide3{
-  50%{width:32vh; margin-right:0;}
-  100%{margin-right:32vh;}
-}
+            100% {
+                margin-top: 32vh;
+            }
+        }
 
-@-webkit-keyframes slide4{
-  50%{height:32vh; margin-bottom:0}
-  100%{margin-bottom:32vh;}
-}
+        @keyframes slide2 {
+            50% {
+                height: 32vh;
+                margin-top: 0;
+            }
 
-@keyframes slide4{
-  50%{height:32vh; margin-bottom:0}
-  100%{margin-bottom:32vh;}
-}</style>
+            100% {
+                margin-top: 32vh;
+            }
+        }
+
+        @-webkit-keyframes slide3 {
+            50% {
+                width: 32vh;
+                margin-right: 0;
+            }
+
+            100% {
+                margin-right: 32vh;
+            }
+        }
+
+        @keyframes slide3 {
+            50% {
+                width: 32vh;
+                margin-right: 0;
+            }
+
+            100% {
+                margin-right: 32vh;
+            }
+        }
+
+        @-webkit-keyframes slide4 {
+            50% {
+                height: 32vh;
+                margin-bottom: 0
+            }
+
+            100% {
+                margin-bottom: 32vh;
+            }
+        }
+
+        @keyframes slide4 {
+            50% {
+                height: 32vh;
+                margin-bottom: 0
+            }
+
+            100% {
+                margin-bottom: 32vh;
+            }
+        }
+    </style>
     <div id="logocontainer" onclick=fill()>
         <div id="pelogo">SJ </div>
         <div class="loader" style="left:2vh; top:0; height:2vh; width:0; animation:slide1 1s linear forwards infinite"></div>
@@ -129,104 +180,76 @@
         <div class="loader" style="right:2vh; bottom:0; height:2vh; width:0; animation:slide3 1s linear forwards infinite"></div>
         <div class="loader" style="left:0; bottom:2vh; width:2vh; height:0; animation:slide4 1s linear forwards infinite; animation-delay:0.5s"></div>
     </div>
-    <div class="containers">
-        <div class='topRow  wow animate__fadeIn'>
-            <img src="img/logo.png" alt="logo">
+    <!--loader-end-->
+
+    <div class="parent">
+        <div class='child title'>
+
+
+            <h1>ООО «СТРОЙЖИЛПРОМ»</h1>
         </div>
-    </div>
-    <div class="MainScreen">
-        <h1>СТРОИТЕЛЬНАЯ
-            КОМПАНИЯ
-        </h1>
-        
-
-    </div>
-    <!--------TOP_END---------------------->
-    <div class="contentPage pager">
-        <h1 class="wow slideInLeft">ООО «СТРОЙЖИЛПРОМ»
-        </h1>
-
-
-
-        <div class='CaserItems '>
-
-            <div class="SlideText ">
+        <div class='child'>
+            <div class="SlideTextFlex ">
 
                 Высококвалифицированная инжиниринговая компания предлагает комплекс работ по строительству, проектированию, реконструкции, монтажу зданий и сооружений в том числе и инженерных сетей
 
 
             </div>
-            <div class="SlidePic ">
-                <video webkit-playsinline="true" playsinline="true" src="img/video/top-1.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/1.png"></video>
-            </div>
-
-            <script>
-
-
-            </script>
-
         </div>
-
+        <div class='child empty'></div>
+        <div class='child PicBox'><video webkit-playsinline="true" playsinline="true" src="img/video/top-1.mp4" autoplay="autoplay" muted="muted" loop="loop" poster="img/video/posers/1.png"></video></div>
     </div>
 
 
-    <!--------PAGE---------------->
-    <div class="contentPage ">
-        <h1>ООО «СТРОЙЖИЛПРОМ»
-        </h1>
+    <div class="parent">
+        <div class='child title'>
 
 
-        <div class='CaserItems'>
-            <div class="SlideText">
+            <h1>ООО «СТРОЙЖИЛПРОМ»</h1>
+        </div>
+        <div class='child'>
+            <div class="SlideTextFlex ">
+
                 - динамично развивающееся компания на рынке строительства и проектирования по <b>Москве и Московской области.</b>
 
                 - приняла участие в <b>46</b> государственных тендерах на общую сумму более чем 2 221 396 039 руб. и в 18 вышла <b>победителем!</b>
                 Компания сотрудничает с <b>крупнейшими</b> игроками строительного рынка Российской Федерации
 
-
             </div>
-            <div class="SlidePic ">
-
-                <img src="img/5.png">
-            </div>
+        </div>
+        <div class='child empty'></div>
+        <div class='child PicBox'>
+            <!--video webkit-playsinline="true" playsinline="true" src="img/5.png" autoplay="autoplay" muted="muted" loop="loop" poster="img/5.png"></video-->
+            <img src="img/5.png">
 
         </div>
-
     </div>
 
-    <!--------PAGE---------------->
-    <div class="contentPage ">
-        <h1>БОЛЕЕ 10 ЛЕТ УСПЕШНОЙ РАБОТЫ В
-            СФЕРЕ СТРОИТЕЛЬСТВА ЭТО -
-        </h1>
-        <div class='CaserItems'>
-            <div class="SlideText  animate__animated animate__fadeInTopLeft list">- свой собственный подход к строительству и ремонту.<br>
+    <div class="parent">
+        <div class='child title'>
+
+
+            <h1>БОЛЕЕ 10 ЛЕТ УСПЕШНОЙ РАБОТЫ В
+                СФЕРЕ СТРОИТЕЛЬСТВА ЭТО -</h1>
+        </div>
+        <div class='child'>
+            <div class="SlideTextFlex ">
+
+                - свой собственный подход к строительству и ремонту.<br>
                 - честность и качество работы превыше всего<br>
                 - оправдываем ожидания клиента
             </div>
-            <div class="SlidePic animate__animated animate__fadeInTopRight">
+        </div>
+        <div class='child empty'></div>
+        <div class='child PicBox'>
+            <video webkit-playsinline="true" playsinline="true" src="img/video/top-3.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/3.png"></video>
 
-                <!--img src="img/top-3.gif"-->
-                <video webkit-playsinline="true" playsinline="true" src="img/video/top-3.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/3.png"></video>
-            </div>
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-    <!--------PAGE---------------->
-
-    <!-------------------------------------------->
-    <div class="contentPage ">
+    <div class="parent ">
         <h1>СПЕЦИАЛИЗАЦИЯ<br>
-            ООО “СТРОЙЖИЛПРОМ”:
+            ООО «СТРОЙЖИЛПРОМ»:
 
         </h1>
         <div class="owl-carousel owl-theme banners">
@@ -293,87 +316,75 @@
 
 
 
+    <div class="parent">
+
+        <div class='child title'>
 
 
+            <h1>КАЧЕСТВО ВЫПОЛНЯЕМЫХ РАБОТ
+                И ГАРАНТИИ - НА ПЕРВОМ МЕСТЕ</h1>
+        </div>
+        <div class='child'>
+            <div class="SlideTextFlex ">
+                Мы располагаем <b>современным</b> техническим и инженерно-технологическим оборудованием, позволяющим обеспечивать <b>высокое качество</b> работ вне зависимости от масштаба проекта. При монтажных работах используются лучшие материалы и современные технические решения.
 
-    <!--------PAGE---------------->
-    <div class="contentPage ">
-        <h1>КАЧЕСТВО ВЫПОЛНЯЕМЫХ РАБОТ
-            И ГАРАНТИИ - НА ПЕРВОМ МЕСТЕ</h1>
-
-
-        <div class='CaserItems'>
-            <div class="SlideText  animate__animated animate__fadeInTopLeft list">Мы располагаем <b>современным</b> техническим и инженерно-технологическим оборудованием, позволяющим обеспечивать <b>высокое качество</b> работ вне зависимости от масштаба проекта. При монтажных работах используются лучшие материалы и современные технические решения.
-
-            </div>
-            <div class="SlidePic animate__animated animate__fadeInTopRight">
-
-
-                <video webkit-playsinline="true" playsinline="true" src="img/video/top-4.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/4.png"></video>
             </div>
         </div>
-    </div>
-    <!--------PAGE---------------->
-    <div class="contentPage ">
-        <h1>КАЧЕСТВО ВЫПОЛНЯЕМЫХ РАБОТ
-            И ГАРАНТИИ - НА ПЕРВОМ МЕСТЕ
+        <div class='child empty'></div>
+        <div class='child PicBox'>
+            <video webkit-playsinline="true" playsinline="true" src="img/video/top-41.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/5.png"></video>
 
-        </h1>
-        <div class='CaserItems'>
-            <div class="SlideText  animate__animated animate__fadeInTopLeft list"><b>Высокая квалификация </b>наших инженеров и строителей, тесные партнерские отношения со смежниками позволяют нам выполнять заказы <b>быстро и качественно</b>, обеспечивают <b>комфорт и безопасность</b> самого высокого уровня.
-            </div>
-            <div class="SlidePic animate__animated animate__fadeInTopRight">
-
-                <video webkit-playsinline="true" playsinline="true" src="img/video/top-41.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/2.png"></video>
-            </div>
         </div>
     </div>
 
-    <!--------PAGE---------------->
-    <div class="contentPage ">
-        <h1>КАЧЕСТВО ВЫПОЛНЯЕМЫХ РАБОТ
-            И ГАРАНТИИ - НА ПЕРВОМ МЕСТЕ
 
-        </h1>
-        <div class='CaserItems'>
-            <div class="SlideText  animate__animated animate__fadeInTopLeft list">Поставляемое оборудование <b>соответствует</b> требованиям электробезопасности и имеет Сертификаты соответствия, Гигиенические сертификаты, Сертификаты пожарной безопасности и другие.
+
+    <div class="parent">
+
+        <div class='child title'>
+
+
+            <h1>КАЧЕСТВО ВЫПОЛНЯЕМЫХ РАБОТ
+                И ГАРАНТИИ - НА ПЕРВОМ МЕСТЕ</h1>
+        </div>
+        <div class='child'>
+            <div class="SlideTextFlex ">
+                Поставляемое оборудование <b>соответствует</b> требованиям электробезопасности и имеет Сертификаты соответствия, Гигиенические сертификаты, Сертификаты пожарной безопасности и другие.
+
 
             </div>
-            <div class="SlidePic animate__animated animate__fadeInTopRight">
+        </div>
+        <div class='child empty'></div>
+        <div class='child PicBox'>
+            <video webkit-playsinline="true" playsinline="true" src="img/video/top-5.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/5.png"></video>
 
-
-                <video webkit-playsinline="true" playsinline="true" src="img/video/top-5.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/5.png"></video>
-            </div>
         </div>
     </div>
 
-    <!--------PAGE---------------->
-    <div class="contentPage ">
-        <h1>КАЧЕСТВО ВЫПОЛНЯЕМЫХ РАБОТ
-            И ГАРАНТИИ - НА ПЕРВОМ МЕСТЕ
+    <div class="parent">
 
-        </h1>
-        <div class='CaserItems'>
-            <div class="SlideText  animate__animated animate__fadeInTopLeft list">Мы располагаем необходимыми техническими, финансовыми и человеческими ресурсами, позволяющими выполнять весь комплекс предлагаемых услуг. На всех объектах задействовано свыше <b>1000</b> сотрудников компании.
+        <div class='child title'>
 
+
+            <h1>КАЧЕСТВО ВЫПОЛНЯЕМЫХ РАБОТ
+                И ГАРАНТИИ - НА ПЕРВОМ МЕСТЕ</h1>
+        </div>
+        <div class='child'>
+            <div class="SlideTextFlex ">
+                Мы располагаем необходимыми техническими, финансовыми и человеческими ресурсами, позволяющими выполнять весь комплекс предлагаемых услуг. На всех объектах задействовано свыше <b>1000</b> сотрудников компании.
             </div>
-            <div class="SlidePic animate__animated animate__fadeInTopRight">
-                <video webkit-playsinline="true" playsinline="true" src="img/video/top-6.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/6.png"></video>
+        </div>
+        <div class='child empty'></div>
+        <div class='child PicBox'>
+            <video webkit-playsinline="true" playsinline="true" src="img/video/top-6.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/6.png"></video>
 
-            </div>
         </div>
     </div>
 
 
 
 
-
-
-
-
-
-
-    <div class="contentPage">
+    <div class="parent">
         <h1>НАШИ ПРОИЗВОДСТВЕННЫЕ МОЩНОСТИ
         </h1>
         <div class="owl-carousel owl-theme owl-carouseler">
@@ -483,8 +494,687 @@
             </div>
         </div>
     </div>
-    <!-------------------------->
+
+
+
+
+
+
+
+
+
+
+    <div class="parent ">
+        <h1>НАШИ ПРОИЗВОДСТВЕННЫЕ МОЩНОСТИ И ОБОРУДОВАНИЕ
+        </h1>
+        <br>
+        <table class='tableCust'>
+            <tbody>
+                <tr>
+                    <td>Фасадные платформы</td>
+                    <td>30 шт.</td>
+                </tr>
+                <tr>
+                    <td>Леса рамные
+                    </td>
+                    <td>10 000m<sup>2</sup></td>
+                </tr>
+
+                <tr>
+                    <td>Вышки передвижные
+                    </td>
+                    <td>20 комп.</td>
+                </tr>
+
+                <tr>
+                    <td>Опалубка для перекрытий
+                    </td>
+                    <td>3000m<sup>2</sup></td>
+                </tr>
+                <tr>
+                    <td>Опалубка для стен
+                    </td>
+                    <td>2000m<sup>2</sup></td>
+                </tr>
+
+                <tr>
+                    <td>Автоспецтехника
+                    </td>
+                    <td>6 шт.</td>
+                </tr>
+                <tr>
+                    <td>Автомобиль с краном-манипулятором
+                    </td>
+                    <td>2 шт.</td>
+                </tr>
+                <tr>
+                    <td>Затирочные машины двух роторные
+                    </td>
+                    <td>4 шт.</td>
+                </tr>
+                <tr>
+                    <td>Бункер для отходов
+                    </td>
+                    <td>8 шт.</td>
+                </tr>
+                <tr>
+                    <td>Бадьи для бетона
+                    </td>
+                    <td>30 шт.</td>
+                </tr>
+                <tr>
+                    <td>Опалубка для колонн
+                    </td>
+                    <td>1200m <sup>2</sup></td>
+                </tr>
+                <tr>
+                    <td>Нарезчик швов
+                    </td>
+                    <td>18 шт.</td>
+                </tr>
+                <tr>
+                    <td>Бетоноломы
+                    </td>
+                    <td>21 шт.</td>
+                </tr>
+                <tr>
+                    <td>Гидромолоты
+                    </td>
+                    <td>36 шт.</td>
+                </tr>
+                <tr>
+                    <td>Затирочные машины
+                    </td>
+                    <td>16 шт.</td>
+                </tr>
+
+                <tr>
+                    <td>Вибратор глубинный электрический
+                    </td>
+                    <td>15 шт.</td>
+                </tr>
+                <tr>
+                    <td>Штукатурная станция
+                    </td>
+                    <td>8 шт.</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="parent">
+        <h1>Скачать презентацию <sup>*.pttx</sup></h1>
+
+        <button>Download</button>
+        <hr>
+    </div>
+    <div class='parent'>
+
+        <div class="contentPage finalPage ">
+            <div class="Contact ">
+                <ul>
+                    <li>Email: <a href='mailto:office@sjprom.ru'>office@sjprom.ru</a></li>
+                    <li>тел.: <a href='tel:84951379676'>8-495-137-96-76</a></li>
+                    <li>тел.: <a href='tel:84997558543'>8-499-755-85-43 </a></li>
+                    <li>тел.: <a href='tel:88005059619'>8-800-505-96-19</a></li>
+
+                </ul>
+            </div>
+            <div class="verticalLine"></div>
+            <div class="FinalPic">
+
+                <img src="img/5.png" alt="">
+            </div>
+
+        </div>
+        <div class="containersWrap">
+            <div class="bottomRow">
+                <div class="brdescriptor">email: <a link='mailto:rengen.93.03@yandex.by'>office@sjprom.ru
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <style>
+        .parent {
+            display: flex;
+            flex-flow: column wrap;
+            height: 100%;
+            height: 100vh;
+            width: 90%;
+            margin: 0 auto;
+            align-content: space-around;
+            justify-content: center;
+
+        }
+
+        .child {
+            width: 45%;
+            height: 40%;
+        }
+
+        .child h1 {
+            max-width: 550px;
+
+        }
+
+        .contentPage h1,
+        h1 {
+            text-transform: uppercase;
+            font-family: "Intro";
+            font-size: 130%;
+        }
+
+        video {
+            max-width: 750px;
+            width: 100%;
+        }
+
+        .title {
+            align-content: center;
+            display: flex;
+            align-items: center;
+            align-items: flex-end;
+            padding: 2vw;
+        }
+
+        .PicBox {
+            align-items: flex-end;
+            display: flex;
+            padding: 0vw;
+        }
+
+        .contentPage h1 {
+            width: 100%;
+            text-transform: uppercase;
+            font-family: "Intro";
+            font-size: 200%;
+            opacity: 0.5;
+            margin: 0 auto;
+        }
+
+        .SlideTextFlex {
+
+            display: -webkit-box;
+            display: -ms-flexbox;
+            -ms-flex-line-pack: distribute;
+            align-content: space-around;
+            justify-items: center;
+            text-align: start;
+            font-size: 150%;
+            font-weight: 200;
+            max-width: 670px;
+            padding: 2vw;
+            text-indent: 0 !important;
+        }
+
+
+
+        .title {
+            height: 35vh;
+        }
+
+        .empty {
+            height: 0;
+        }
+
+        .PicBox {}
+
+
+
+
+        @media screen and (max-width:840px) {
+            .parent {
+                display: flex;
+                height: 100%;
+                width: 90%;
+                margin: 0 auto;
+                padding-top: 10vh;
+                padding-bottom: 10vh;
+                align-content: space-around;
+            }
+
+            element.style {
+                width: 100%;
+                text-align: center;
+            }
+
+            .title {
+                align-content: center;
+                display: block;
+                text-align: center;
+                align-items: flex-end;
+                padding: 2%;
+                height: 30vh;
+            }
+
+            .child {
+                width: 90vw;
+                height: inherit;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+
+            }
+
+
+            .SlideTextFLex {
+                line-height: 1.67;
+                font-size: 21px;
+            }
+
+            .tableCust tr td {
+                padding: 15px !important;
+            }
+
+            .child h1 {
+                max-width: 550px;
+                margin: 0 auto;
+                font-size: 150%;
+            }
+
+            .Contact {
+                font-size: 100%;
+                text-decoration: none;
+            }
+
+            .verticalLine {
+                height: 10vh;
+                width: 3px;
+                background: #ffc000;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+    <div class="containers">
+        <div class='topRow  wow animate__fadeIn'>
+            <img src="img/logo.png" alt="logo">
+        </div>
+    </div>
+    <div class="MainScreen">
+        <h1>СТРОИТЕЛЬНАЯ
+            КОМПАНИЯ
+        </h1>
+
+
+    </div>
+    <!--------TOP_END---------------------->
+    <div class="contentPage pager" style='display:none;'>
+        <!--h1 class="wow slideInLeft">
+        </h1-->
+
+        <div class='CaserItems '>
+            <div class="SlideText ">ООО «СТРОЙЖИЛПРОМ»</div>
+        </div>
+        <div class="SlidePic ">
+
+        </div>
+
+
+        <div class='CaserItems '>
+
+            <div class="SlideText ">
+
+                Высококвалифицированная инжиниринговая компания предлагает комплекс работ по строительству, проектированию, реконструкции, монтажу зданий и сооружений в том числе и инженерных сетей
+
+
+            </div>
+            <div class="SlidePic ">
+
+
+                <img src="img/5.png">
+
+                <!--video webkit-playsinline="true" playsinline="true" src="img/video/top-1.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/1.png"></video-->
+            </div>
+
+            <script>
+
+
+            </script>
+
+        </div>
+
+    </div>
+
+
+
+    <!--------PAGE---------------
+    <div class="contentPage " style="display:none;">
+        <h1>ООО «СТРОЙЖИЛПРОМ»
+        </h1>
+
+
+        <div class='CaserItems'>
+            <div class="SlideText">
+                - динамично развивающееся компания на рынке строительства и проектирования по <b>Москве и Московской области.</b>
+
+                - приняла участие в <b>46</b> государственных тендерах на общую сумму более чем 2 221 396 039 руб. и в 18 вышла <b>победителем!</b>
+                Компания сотрудничает с <b>крупнейшими</b> игроками строительного рынка Российской Федерации
+
+
+            </div>
+            <div class="SlidePic ">
+
+                <img src="img/5.png">
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!--div class="contentPage " style='display:none;'>
+        <h1>БОЛЕЕ 10 ЛЕТ УСПЕШНОЙ РАБОТЫ В
+            СФЕРЕ СТРОИТЕЛЬСТВА ЭТО -
+        </h1>
+        <div class='CaserItems'>
+            <div class="SlideText  animate__animated animate__fadeInTopLeft list">- свой собственный подход к строительству и ремонту.<br>
+                - честность и качество работы превыше всего<br>
+                - оправдываем ожидания клиента
+            </div>
+            <div class="SlidePic animate__animated animate__fadeInTopRight">
+
+             
+                <video webkit-playsinline="true" playsinline="true" src="img/video/top-3.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/3.png"></video>
+            </div>
+        </div>
+    </div-->
+
+
+
+
+
+
+
+
+
+
+    <!--------PAGE---------------->
+
+
+    <!-------------------------------------------
     <div class="contentPage ">
+        <h1>СПЕЦИАЛИЗАЦИЯ<br>
+            ООО «СТРОЙЖИЛПРОМ»:
+
+        </h1>
+        <div class="owl-carousel owl-theme banners">
+
+            <div class='Slide '>
+
+
+
+                <div class="SlideDes ">СТРОИТЕЛЬСТВО
+                    ЗАГОРОДНЫХ ДОМОВ
+
+                </div>
+                <img src="img/prev1.png" class='slideImg'>
+            </div>
+
+
+
+
+            <div class='Slide '>
+                <div class="SlideDes ">РЕМОНТ
+                    ОФИСОВ И КВАРТИР
+                </div>
+                <img src="img/prev2.png" class='slideImg'>
+            </div>
+
+            <div class='Slide '>
+
+
+
+                <div class="SlideDes ">СТРОИТЕЛЬСТВО
+                    КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ
+
+
+
+                </div>
+                <img src="img/prev3.png" class='slideImg'>
+            </div>
+            <div class='Slide '>
+
+
+                <div class="SlideDes ">ОТДЕЛКА И РЕМОНТ ЗАГОРОДНЫХ ДОМОВ
+
+
+                </div>
+                <img src="img/prev4.png" class='slideImg'>
+            </div>
+
+
+            <div class='Slide '>
+
+
+
+                <div class="SlideDes ">ВЕДЕНИЕ ЭКСПЛУАТАЦИИ ЗДАНИЙ ЛЮБОЙ СЛОЖНОСТИ
+
+
+                </div>
+                <img src="img/prev5.png" class='slideImg'>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--------PAGE---------------
+    <div class="contentPage " style="display: none;">
+        <h1>КАЧЕСТВО ВЫПОЛНЯЕМЫХ РАБОТ
+            И ГАРАНТИИ - НА ПЕРВОМ МЕСТЕ</h1>
+
+
+        <div class='CaserItems'>
+            <div class="SlideText  animate__animated animate__fadeInTopLeft list">Мы располагаем <b>современным</b> техническим и инженерно-технологическим оборудованием, позволяющим обеспечивать <b>высокое качество</b> работ вне зависимости от масштаба проекта. При монтажных работах используются лучшие материалы и современные технические решения.
+
+            </div>
+            <div class="SlidePic animate__animated animate__fadeInTopRight">
+
+
+                <video webkit-playsinline="true" playsinline="true" src="img/video/top-4.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/4.png"></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentPage ">
+        <h1>КАЧЕСТВО ВЫПОЛНЯЕМЫХ РАБОТ
+            И ГАРАНТИИ - НА ПЕРВОМ МЕСТЕ
+
+        </h1>
+        <div class='CaserItems'>
+            <div class="SlideText  animate__animated animate__fadeInTopLeft list"><b>Высокая квалификация </b>наших инженеров и строителей, тесные партнерские отношения со смежниками позволяют нам выполнять заказы <b>быстро и качественно</b>, обеспечивают <b>комфорт и безопасность</b> самого высокого уровня.
+            </div>
+            <div class="SlidePic animate__animated animate__fadeInTopRight">
+
+                <video webkit-playsinline="true" playsinline="true" src="img/video/top-41.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/2.png"></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentPage ">
+        <h1>КАЧЕСТВО ВЫПОЛНЯЕМЫХ РАБОТ
+            И ГАРАНТИИ - НА ПЕРВОМ МЕСТЕ
+
+        </h1>
+        <div class='CaserItems'>
+            <div class="SlideText  animate__animated animate__fadeInTopLeft list">Поставляемое оборудование <b>соответствует</b> требованиям электробезопасности и имеет Сертификаты соответствия, Гигиенические сертификаты, Сертификаты пожарной безопасности и другие.
+
+            </div>
+            <div class="SlidePic animate__animated animate__fadeInTopRight">
+
+
+                <video webkit-playsinline="true" playsinline="true" src="img/video/top-5.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/5.png"></video>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="contentPage " style="display: none">
+        <h1>КАЧЕСТВО ВЫПОЛНЯЕМЫХ РАБОТ
+            И ГАРАНТИИ - НА ПЕРВОМ МЕСТЕ
+
+        </h1>
+        <div class='CaserItems'>
+            <div class="SlideText  animate__animated animate__fadeInTopLeft list">Мы располагаем необходимыми техническими, финансовыми и человеческими ресурсами, позволяющими выполнять весь комплекс предлагаемых услуг. На всех объектах задействовано свыше <b>1000</b> сотрудников компании.
+
+            </div>
+            <div class="SlidePic animate__animated animate__fadeInTopRight">
+                <video webkit-playsinline="true" playsinline="true" src="img/video/top-6.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/6.png"></video>
+
+            </div>
+        </div>
+    </div-->
+
+
+
+
+
+
+
+
+
+
+    <!--div class="contentPage">
+        <h1>НАШИ ПРОИЗВОДСТВЕННЫЕ МОЩНОСТИ
+        </h1>
+        <div class="owl-carousel owl-theme owl-carouseler">
+            <div class="caseItem">
+                <img src="img/items/platform.png" alt="platform">
+                <div>Фасадные платформы</div> <span>30шт</span>
+            </div>
+            <div class="caseItem">
+                <img src="img/items/lesa.png" alt="platform">
+
+                <div>Леса рамные</div><span>10 000 m<sup>2</sup></span>
+            </div>
+            <div class="caseItem"> <img src="img/items/vyshka.png" alt="platform">
+
+                <div>Вышки передвижные</div>
+                <span>20 комплектов</span>
+            </div>
+            <div class="caseItem">
+                <img src="img/items/traktor.png" alt="platform">
+                <div>Автоспецтехника
+                </div> <span>6 шт</span>
+            </div>
+            <div class="caseItem">
+                <img src="img/items/zatirka2.png" alt="platform">
+
+                <div>ЗАТИРОЧНЫЕ МАШИНЫ ДВУХ РОТОРНЫЕ
+
+                </div><span>4 шт</span>
+            </div>
+            <div class="caseItem">
+                <img src="img/items/avtokran.png" alt="platform">
+                <div>Автокран-манипулятор
+                </div> <span>2 шт</span>
+            </div>
+            <div class="caseItem">
+                <img src="img/items/opal-for-perekrytiya.png" alt="platform">
+                <div>ОПАЛУБКА ДЛЯ ПЕРЕКРЫТИЙ
+                </div> <span>3 000 m<sup>2</sup></span>
+            </div>
+            <div class="caseItem">
+                <img src="img/items/opal-for-walls.png" alt="platform">
+
+                <div>ОПАЛУБКА ДЛЯ СТЕН
+                </div><span>2 000 m<sup>2</sup></span>
+            </div>
+            <div class="caseItem">
+                <img src="img/items/bunker.png" alt="platform">
+
+                <div>БУНКЕР ДЛЯ ОТХОДОВ
+
+                </div><span>8 шт</span>
+            </div>
+            <div class="caseItem">
+                <img src="img/items/badya.png" alt="platform">
+
+                <div>БАДЬИ ДЛЯ БЕТОНА
+
+
+                </div><span>30 шт</span>
+            </div>
+            <div class="caseItem">
+                <img src="img/items/colomn.png" alt="platform">
+
+                <div>ОПАЛУБКА ДЛЯ
+                    КОЛЛОН
+                </div><span>300 шт</span>
+            </div>
+
+            <div class="caseItem">
+                <img src="img/items/betonolom.png" alt="platform">
+
+                <div>БЕТОНОЛОМЫ
+                </div><span>21 шт</span>
+            </div>
+            <div class="caseItem">
+                <img src="img/items/hydromolot.png" alt="platform">
+
+                <div>ГИДРОМОЛОТЫ
+                </div><span>36 шт</span>
+            </div>
+
+
+            <div class="caseItem">
+                <img src="img/items/narezka.png" alt="platform">
+
+                <div>НАРЕЗЧИК ШВОВ
+                </div><span>18 шт</span>
+            </div>
+
+            <div class="caseItem">
+                <img src="img/items/zatirka.png" alt="platform">
+
+                <div>Затирочные машины
+                </div><span>16 шт</span>
+            </div>
+            <div class="caseItem">
+                <img src="img/items/station.png" alt="platform">
+
+                <div>Штукатурная станция
+                </div><span>8 шт</span>
+            </div>
+            <div class="caseItem">
+                <img src="img/items/vibrator.png" alt="platform">
+
+                <div>Вибратор глубинный
+                </div><span>15 шт</span>
+            </div>
+        </div>
+    </div-->
+    <!-------------------------
+    <div class="contentPage " style="display: none;">
         <h1>НАШИ ПРОИЗВОДСТВЕННЫЕ МОЩНОСТИ И ОБОРУДОВАНИЕ
         </h1>
         <table class='tableCust'>
@@ -580,9 +1270,9 @@
             </tbody>
         </table>
 
-    </div>
-    <!-----------------END--------------------------->
-    <div class="contentPage finalPage ">
+    </div-->
+    <!-----------------END--------------------------
+    <div class="contentPage finalPage " style="display: none;">
         <div class="Contact ">
             <ul>
                 <li>Email: <a href='mailto:office@sjprom.ru'>office@sjprom.ru</a></li>
@@ -598,7 +1288,7 @@
             <img src="img/5.png" alt="">
         </div>
 
-    </div>
+    </div-->
     <div class="containersWrap">
         <div class="bottomRow">
             <div class="brdescriptor">email: <a link='mailto:rengen.93.03@yandex.by'>office@sjprom.ru
@@ -629,13 +1319,13 @@
         new WOW().init();
     </script>
     <script>
-        $(window).ready(function(){
-               $('#logocontainer').hide();
+        $(window).ready(function() {
+            $('#logocontainer').hide();
             $('#background').hide();
         })
-        
+
         $(document).ready(function() {
-         
+
 
 
             $(".owl-carouseler").owlCarousel({

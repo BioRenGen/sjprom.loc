@@ -1,0 +1,65 @@
+<div class="parent">
+    <div class='child title'>
+        <h1>ООО «СТРОЙЖИЛПРОМ»</h1>
+    </div>
+    <div class='child'>Высококвалифицированная инжиниринговая компания предлагает комплекс работ по строительству, проектированию, реконструкции, монтажу зданий и сооружений в том числе и инженерных сетей</div>
+    <div class='child'></div>
+    <div class='child PicBox'><video webkit-playsinline="true" playsinline="true" src="img/video/top-1.mp4" autoplay="autoplay" muted="muted" loop="loop" poster="img/video/posers/1.png"></video></div>
+</div>
+<style>
+    .parent {
+        display: flex;
+        flex-flow: column wrap;
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        background: #f4f4f4;
+        align-content: space-around;
+        justify-content: center;
+
+    }
+
+    .child {
+        width: 40%;
+        height: 40%;
+        margin-left: 1vh;
+        border: 1px #555 solid;
+    }
+
+    .contentPage h1,
+    h1 {
+        text-transform: uppercase;
+        font-family: "Intro";
+        font-size: 130%;
+    }
+
+    video {
+        max-width: 650px;
+        width: 90%;
+    }
+
+    .title {
+        align-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .PicBox {
+        justify-content: center;
+        align-content: initial;
+        display: flex;
+    }
+
+    /*mobile flex styles*/
+    /*
+    .parent {
+    display: flex;
+    /* flex-flow: column; */
+    /*
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    background: #f4f4f4;
+    align-content: space-around;
+}*/
+</style>

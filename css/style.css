@@ -75,15 +75,16 @@ body {
 }
 
 .contentPage {
-    min-height: 90vh;
+   min-height: 90vh;
     height: 100%;
     width: 100%;
     top: 15vh;
+
 }
 
 .contentPage h1 {
     width: 90%;
-    padding: 3vh 3vh 5vh;
+    padding: 3vh 3vh 15vh;
     text-transform: uppercase;
     font-family: "Intro";
     font-size: 200%;
@@ -159,7 +160,8 @@ body {
 
 .tableCust {
     margin: 0 auto;
-    width: 80%;
+  /*  width: 80%;*/
+    width: 100%;
     position: relative;
     font-family: 'Roboto', sans-serif;
     color: #555555;
@@ -379,6 +381,9 @@ video {
     -webkit-box-shadow: 1px 4px 10px #232323;
     box-shadow: 1px 4px 10px #555;
 }
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 5vh;
+}
 @media screen and (max-width:720px) {
     .SlidePic {
         width: 90%;
@@ -416,6 +421,9 @@ video {
     .Slide {
         min-height: 50vh !important
     }}
+
+
+/*
 @media screen and (max-width: 625px) {
     .contentPage {
         min-height: 50vh;
@@ -480,11 +488,15 @@ video {
     }
     .Contact {
         line-height: 4;
-        font-size: 100%;
-        width: 100%;
+            width: 100%;
         display: block;
         padding-top: 5vh;
         padding-bottom: 5vh;
+      
+    font-size: 200%;
+    text-transform: uppercase;
+    text-decoration: none;
+}
     }
     .FinalPic {
         text-align: center;
@@ -531,3 +543,4 @@ video {
     }
 
 }
+*/
