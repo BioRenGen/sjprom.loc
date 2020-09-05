@@ -23,8 +23,12 @@
 
 .topRow {
     width: 100%;
-    padding: 30px 40px 0px;
+   /* padding: 30px 40px 0px;*/
     position: fixed;
+  /*  padding: 5px 40px 0px;*/
+    padding: 2vw;
+    
+    
 }
 
 .topRow img {
@@ -190,8 +194,8 @@ body {
 }
 
 .verticalLine {
-    height: 20vh;
-    width: 5px;
+    height: 10vh;
+    width: 3px;
     background: #ffc000;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -257,7 +261,7 @@ video {
     width: 100%;
     height: inherit;
     display: contents;
-    border: 1px #000 solid;
+   /* border: 1px #000 solid;*/
     text-transform: uppercase;
 
 }
@@ -385,10 +389,71 @@ video {
     -webkit-box-shadow: 1px 4px 10px #232323;
     box-shadow: 1px 4px 10px #555;
 }
-
 .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 5vh;
 }
+.FinalPic {
+    text-align: center;
+    margin: 0 auto;
+    max-width: inherit;width: 50%;
+    padding: 15%;
+}
+.topRow {
+    visibility: inherit !important;
+    margin: 0 auto;
+    position: relative;
+}
+.SlidePic {
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin: 0 auto;
+    text-align: center;
+}
+video {
+    width: 100%;
+}
+.tableCust tr td {
+    padding: 5px !important;
+    font-size: 12px;
+    line-height: 3;
+    font-weight: 600;
+}
+.map h1 {
+    font-size: 150%;
+    line-height: 2.5;
+}
+.Slide {
+    min-height: 30vh !important
+}
+.SlideDes {
+    padding: 1vw;
+    -webkit-box-shadow: 1px 2px 4px #555;
+    box-shadow: 1px 2px 4px #555;
+    bottom: 0;
+}
+.Contact {
+    line-height: 1.67;
+    text-decoration: none;
+    width: 50% !important;
+    padding: 10%;
+}
+.section {
+    background: #f4f4f4;
+    opacity: 1;
+}
+.parent {
+    background: #ffffff;
+    border: 1px #000 solid;
+}
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:720px) {
     .SlidePic {
@@ -507,72 +572,5 @@ video {
         display: none;
     }
 
-    .Contact {
-        line-height: 4;
-        width: 100%;
-        display: block;
-        padding-top: 5vh;
-        padding-bottom: 5vh;
-
-        font-size: 200%;
-        text-transform: uppercase;
-        text-decoration: none;
-    }
-}
-
-.FinalPic {
-    text-align: center;
-    margin: 0 auto;
-    max-width: inherit;
-}
-
-.topRow {
-  /*  visibility: inherit !important;
-    width: 40%;
-    margin: 0 auto;
-    padding: 5px 0 0 0;
-    position: relative;*/
-    
-}
-.topRow {
-    visibility: inherit !important;
-    /* width: 40%; */
-    margin: 0 auto;
-    /* padding: 5px 0 0 0; */
-    position: relative;
-}
-.SlidePic {
-    width: 100%;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    margin: 0 auto;
-    text-align: center;
-}
-
-video {
-    width: 100%;
-}
-
-.tableCust tr td {
-    padding: 5px !important;
-    font-size: 12px;
-    line-height: 3;
-    font-weight: 600;
-}
-
-.map h1 {
-    font-size: 150%;
-    line-height: 2.5;
-}
-
-.Slide {
-    min-height: 30vh !important
-}
-
-.SlideDes {
-    padding: 1vw;
-    -webkit-box-shadow: 1px 2px 4px #555;
-    box-shadow: 1px 2px 4px #555;
-    bottom: 0;
-}
+   
 }

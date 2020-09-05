@@ -26,9 +26,23 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" />
+
+
+
+
+
+
+
+
+
+
 </head>
 
+
+
 <body>
+
+
     <!--loader begin-->
 
     <div id="background"></div>
@@ -203,6 +217,8 @@
 
 
     </div>
+
+
     <div class="parent">
         <div class='child title'>
 
@@ -220,7 +236,6 @@
         <div class='child empty'></div>
         <div class='child PicBox'><video webkit-playsinline="true" playsinline="true" src="img/video/top-1.mp4" autoplay="autoplay" muted="muted" loop="loop" poster="img/video/posers/1.png"></video></div>
     </div>
-
 
     <div class="parent">
         <div class='child title'>
@@ -240,11 +255,15 @@
         </div>
         <div class='child empty'></div>
         <div class='child PicBox'>
-            <!--video webkit-playsinline="true" playsinline="true" src="img/5.png" autoplay="autoplay" muted="muted" loop="loop" poster="img/5.png"></video-->
+
             <img src="img/5.png">
 
         </div>
     </div>
+
+
+
+
 
     <div class="parent">
         <div class='child title'>
@@ -267,6 +286,10 @@
 
         </div>
     </div>
+
+
+
+
 
     <div class="parent ">
         <h1>СПЕЦИАЛИЗАЦИЯ<br>
@@ -332,11 +355,6 @@
 
         </div>
     </div>
-
-
-
-
-
     <div class="parent">
 
         <div class='child title'>
@@ -357,9 +375,6 @@
 
         </div>
     </div>
-
-
-
     <div class="parent">
 
         <div class='child title'>
@@ -381,7 +396,6 @@
 
         </div>
     </div>
-
     <div class="parent">
 
         <div class='child title'>
@@ -404,9 +418,8 @@
 
 
 
-
     <div class="parent">
-        <h1>НАШИ ПРОИЗВОДСТВЕННЫЕ МОЩНОСТИ
+        <h1 style='color:red'>НАШИ ПРОИЗВОДСТВЕННЫЕ МОЩНОСТИ
         </h1>
         <div class="owl-carousel owl-theme owl-carouseler">
             <div class="caseItem">
@@ -515,18 +528,8 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
     <div class="parent ">
-        <h1>НАШИ ПРОИЗВОДСТВЕННЫЕ МОЩНОСТИ И ОБОРУДОВАНИЕ
+        <h1 style='color:red'>НАШИ ПРОИЗВОДСТВЕННЫЕ МОЩНОСТИ И ОБОРУДОВАНИЕ
         </h1>
         <br>
         <table class='tableCust'>
@@ -623,13 +626,15 @@
         </table>
 
     </div>
-
     <div class="parent">
         <h1>Скачать презентацию <sup>*.pttx</sup></h1>
 
         <button>Download</button>
         <hr>
     </div>
+    
+    
+    
     <div class='parent'>
 
         <div class="contentPage finalPage ">
@@ -642,24 +647,22 @@
 
                 </ul>
             </div>
+            
             <div class="verticalLine"></div>
+            
+            
             <div class="FinalPic">
 
                 <img src="img/logo.png" alt="">
             </div>
 
         </div>
-        <div class="containersWrap">
-            <div class="bottomRow">
-                <div class="brdescriptor">email: <a link='mailto:rengen.93.03@yandex.by'>office@sjprom.ru
-                    </a>
-                </div>
-            </div>
-        </div>
+        
+        
+    
 
 
     </div>
-
 
     <style>
         .parent {
@@ -676,7 +679,7 @@
 
         .child {
             width: 45%;
-            height: 40%;
+            height: 45%;
         }
 
         .child h1 {
@@ -705,7 +708,7 @@
         }
 
         .PicBox {
-            align-items: flex-end;
+          /*  align-items: flex-end;  */
             display: flex;
             padding: 0vw;
         }
@@ -737,14 +740,16 @@
 
 
         .title {
-            height: 35vh;
+            height: 25vh;
         }
 
         .empty {
             height: 0;
         }
 
-        .PicBox {}
+        .PicBox {
+            /**border:1px red solid;*/
+        }
 
 
 
@@ -798,10 +803,10 @@
                 font-size: 150%;
             }
 
-            .Contact {
+         /*   .Contact {
                 /*  font-size: 100%;*/
                 text-decoration: none;
-            }
+            }*/
 
             .verticalLine {
                 height: 10vh;
@@ -817,7 +822,7 @@
                 -ms-flex-pack: center;
                 justify-content: center;
             }
-
+/*
             .Contact {
                 font-size: 130%;
                 text-decoration: none;
@@ -825,7 +830,7 @@
                 display: block;
                 margin: 0 auto;
                 position: absolute;
-            }
+            }*/
 
             .finalPage {
                 padding: 0;
@@ -881,9 +886,6 @@
     <script src="js/wow.min.js">
     </script>
 
-    <script>
-        new WOW().init();
-    </script>
     <script>
         $(window).ready(function() {
             $('#logocontainer').hide();
