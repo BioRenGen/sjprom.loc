@@ -211,10 +211,11 @@
         </div>
     </div>
     <div class="MainScreen">
-        <h1>СТРОИТЕЛЬНАЯ
-            КОМПАНИЯ
-        </h1>
-
+        <h1 style='width:50%; padding:10%; text-align: left'>СТРОИТЕЛЬНАЯ
+            КОМПАНИЯ<br>
+        </h1><br />
+        <hr><br />
+        <img src="img/logo-SJPROM-white.svg" class='mainscreenLogo'>
 
     </div>
 
@@ -234,7 +235,11 @@
             </div>
         </div>
         <div class='child empty'></div>
-        <div class='child PicBox'><video webkit-playsinline="true" playsinline="true" src="img/video/top-1.mp4" autoplay="autoplay" muted="muted" loop="loop" poster="img/video/posers/1.png"></video></div>
+        <div class='child PicBox'>
+
+            
+            
+            <video webkit-playsinline="true" playsinline="true" src="img/video/top-1.mp4111" autoplay="autoplay" muted="muted" loop="loop" poster="img/mask1.png"></video></div>
     </div>
 
     <div class="parent">
@@ -256,8 +261,7 @@
         <div class='child empty'></div>
         <div class='child PicBox'>
 
-            <img src="img/5.png">
-
+          <video webkit-playsinline="true" playsinline="true" src="img/video/top-1.mp4111" autoplay="autoplay" muted="muted" loop="loop" poster="img/mask1.png"></video>
         </div>
     </div>
 
@@ -282,7 +286,7 @@
         </div>
         <div class='child empty'></div>
         <div class='child PicBox'>
-            <video webkit-playsinline="true" playsinline="true" src="img/video/top-3.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/3.png"></video>
+            <video webkit-playsinline="true" playsinline="true" src="img/video/top-3---.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/mask1.png"></video>
 
         </div>
     </div>
@@ -371,7 +375,7 @@
         </div>
         <div class='child empty'></div>
         <div class='child PicBox'>
-            <video webkit-playsinline="true" playsinline="true" src="img/video/top-41.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/5.png"></video>
+            <video webkit-playsinline="true" playsinline="true" src="img/video/top-41-.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/mask1.png"></video>
 
         </div>
     </div>
@@ -392,7 +396,7 @@
         </div>
         <div class='child empty'></div>
         <div class='child PicBox'>
-            <video webkit-playsinline="true" playsinline="true" src="img/video/top-5.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/5.png"></video>
+            <video webkit-playsinline="true" playsinline="true" src="img/video/top-5-.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/mask1.png"></video>
 
         </div>
     </div>
@@ -411,7 +415,7 @@
         </div>
         <div class='child empty'></div>
         <div class='child PicBox'>
-            <video webkit-playsinline="true" playsinline="true" src="img/video/top-6.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/video/posers/6.png"></video>
+            <video webkit-playsinline="true" playsinline="true" src="img/video/top-6-.mp4" autoplay="autoplay" muted="muted" loop='loop' poster="img/mask1.png"></video>
 
         </div>
     </div>
@@ -632,9 +636,9 @@
         <button>Download</button>
         <hr>
     </div>
-    
-    
-    
+
+
+
     <div class='parent'>
 
         <div class="contentPage finalPage ">
@@ -647,19 +651,19 @@
 
                 </ul>
             </div>
-            
+
             <div class="verticalLine"></div>
-            
-            
+
+
             <div class="FinalPic">
 
                 <img src="img/logo.png" alt="">
             </div>
 
         </div>
-        
-        
-    
+
+
+
 
 
     </div>
@@ -674,6 +678,7 @@
             margin: 0 auto;
             align-content: space-around;
             justify-content: center;
+            background-color: #ffffff;
 
         }
 
@@ -708,7 +713,7 @@
         }
 
         .PicBox {
-          /*  align-items: flex-end;  */
+            /*  align-items: flex-end;  */
             display: flex;
             padding: 0vw;
         }
@@ -749,6 +754,7 @@
 
         .PicBox {
             /**border:1px red solid;*/
+      
         }
 
 
@@ -803,26 +809,27 @@
                 font-size: 150%;
             }
 
-         /*   .Contact {
+            /*   .Contact {
                 /*  font-size: 100%;*/
-                text-decoration: none;
-            }*/
+            text-decoration: none;
+        }
 
-            .verticalLine {
-                height: 10vh;
-                width: 3px;
-                background: #ffc000;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-            }
-/*
+        */ .verticalLine {
+            height: 10vh;
+            width: 3px;
+            background: #ffc000;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+        }
+
+        /*
             .Contact {
                 font-size: 130%;
                 text-decoration: none;
@@ -832,24 +839,24 @@
                 position: absolute;
             }*/
 
-            .finalPage {
-                padding: 0;
-            }
+        .finalPage {
+            padding: 0;
+        }
 
-            .verticalLine {
-                height: 3px;
-                max-width: 100vh;
-                width: 100%;
-                position: absolute;
-                left: 0;
+        .verticalLine {
+            height: 3px;
+            max-width: 100vh;
+            width: 100%;
+            position: absolute;
+            left: 0;
 
-            }
+        }
 
-            .FinalPic img {
-                max-width: 350px;
-                width: 50%;
-                padding-top: 30%;
-            }
+        .FinalPic img {
+            max-width: 350px;
+            width: 50%;
+            padding-top: 30%;
+        }
 
         }
     </style>
@@ -919,11 +926,8 @@
                         items: 1
                     }
                 }
-
             });
-
             $('.banners').owlCarousel({
-
                 autoplay: true,
                 items: 1,
                 loop: true,
@@ -931,11 +935,35 @@
                 dots: true,
                 center: true,
                 autoplayTimeout: 2000,
-
             });
-
-
         });
+        $(document).ready(function() {
+            
+    var $layer_0 = $('.layer-0'),
+        $container = $('main'),
+        container_w = $container.width(),
+        container_h = $container.height();
+    $(window).on('mousemove.parallax', function(event) {
+        var pos_x = event.pageX,
+            pos_y = event.pageY,
+            left = 0,
+            top = 0;
+        left = container_w / 2 - pos_x;
+        top = container_h / 2 - pos_y;
+        var res = pos_x / 170;
+        if (res <= 100) {
+            res / 21;
+            $('.MainScreen').css("background-position-x",  res + 'px');
+           }
+    });
+
+            
+            
+            
+            
+        });
+        
+     /*************/
     </script>
 </body>
 
