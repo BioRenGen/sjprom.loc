@@ -586,3 +586,7 @@ video {
 .mainscreenLogo {
     padding:10%;
 }
+
+.name {
+    color: darkred !important;
+}
