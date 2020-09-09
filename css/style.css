@@ -23,12 +23,12 @@
 
 .topRow {
     width: 100%;
-   /* padding: 30px 40px 0px;*/
+    /* padding: 30px 40px 0px;*/
     position: fixed;
-  /*  padding: 5px 40px 0px;*/
+    /*  padding: 5px 40px 0px;*/
     padding: 2vw;
-    
-    
+
+
 }
 
 .topRow img {
@@ -37,7 +37,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-   /* color: #555555;    background: url('../img/background.svg');
+    /* color: #555555;    background: url('../img/background.svg');
     background-size: 100%;
     background-position: center;*/
 }
@@ -84,7 +84,7 @@ body {
     min-height: 90vh;
     height: 100%;
     width: 100%;
-    
+
     top: 15vh;
 
 }
@@ -144,8 +144,8 @@ body {
     width: 100%;
 
     height: 100vh;
-  background-color: rgb(23,23,23);
-background-color: radial-gradient(circle, rgba(85,85,85,1) 8%, rgba(35,35,35,1) 176%);
+    background-color: rgb(23, 23, 23);
+    background-color: radial-gradient(circle, rgba(85, 85, 85, 1) 8%, rgba(35, 35, 35, 1) 176%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -169,9 +169,12 @@ background-color: radial-gradient(circle, rgba(85,85,85,1) 8%, rgba(35,35,35,1) 
     color: #f4f4f4;
 }
 
+
+
 .tableCust {
     margin: 0 auto;
-    /*  width: 80%;*/
+    /* width: 80%; */
+    max-width: 950px;
     width: 100%;
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -179,7 +182,18 @@ background-color: radial-gradient(circle, rgba(85,85,85,1) 8%, rgba(35,35,35,1) 
     font-size: 18px;
     font-weight: 100;
     line-height: 1.8;
+  /*  background: #f4f4f4;*/
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transform: transition .2s;
+    transform: transition .2s;
+
+
 }
+.tableCust tr{
+    border-bottom: 1px #ddd solid;
+}
+
 
 .tableCust td {
     padding: 5px 40px 5px 40px;
@@ -187,7 +201,7 @@ background-color: radial-gradient(circle, rgba(85,85,85,1) 8%, rgba(35,35,35,1) 
 }
 
 .tableCust tr:nth-child(odd) {
-    background: #ddd;
+ /*   background: #ddd;*/
 
 }
 
@@ -198,6 +212,7 @@ background-color: radial-gradient(circle, rgba(85,85,85,1) 8%, rgba(35,35,35,1) 
 
 .tableCust tr td:nth-child(2n) {
     font-weight: 600;
+    text-align: center;
 }
 
 .verticalLine {
@@ -268,7 +283,7 @@ video {
     width: 100%;
     height: inherit;
     display: contents;
-   /* border: 1px #000 solid;*/
+    /* border: 1px #000 solid;*/
     text-transform: uppercase;
 
 }
@@ -333,7 +348,9 @@ video {
     min-height: 100vh;
     display: block;
 }
-
+.mainscreenLogo {
+    padding: 10%;
+}
 .Slide {
     width: 100%;
     height: auto;
@@ -396,20 +413,25 @@ video {
     -webkit-box-shadow: 1px 4px 10px #232323;
     box-shadow: 1px 4px 10px #555;
 }
+
 .owl-theme .owl-nav.disabled + .owl-dots {
     margin-top: 5vh;
 }
+
 .FinalPic {
     text-align: center;
     margin: 0 auto;
-    max-width: inherit;width: 50%;
+    max-width: inherit;
+    width: 50%;
     padding: 15%;
 }
+
 .topRow {
     visibility: inherit !important;
     margin: 0 auto;
     position: relative;
 }
+
 .SlidePic {
     width: 100%;
     padding-top: 10vh;
@@ -417,42 +439,197 @@ video {
     margin: 0 auto;
     text-align: center;
 }
+
 video {
     width: 100%;
 }
+
 .tableCust tr td {
-    padding: 5px !important;
+    /*padding: 5px !important;*/
     font-size: 12px;
     line-height: 3;
-    font-weight: 600;
 }
+
 .map h1 {
     font-size: 150%;
     line-height: 2.5;
 }
+
 .Slide {
     min-height: 30vh !important
 }
+
 .SlideDes {
     padding: 1vw;
     -webkit-box-shadow: 1px 2px 4px #555;
     box-shadow: 1px 2px 4px #555;
     bottom: 0;
 }
+
 .Contact {
     line-height: 1.67;
     text-decoration: none;
     width: 50% !important;
     padding: 10%;
 }
+
 .section {
     background: #f4f4f4;
     opacity: 1;
 }
+
 .parent {
 
- /*   background: #ffffff;
+    /*   background: #ffffff;
     border: 1px #000 solid;*/
+}
+
+
+.parent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    height: 100%;
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: #ffffff;
+
+}
+
+.child {
+    width: 45%;
+    height: 45%;
+}
+
+.child h1 {
+    max-width: 550px;
+
+}
+
+.contentPage h1,
+h1 {
+    text-transform: uppercase;
+    font-family: "Intro";
+    font-size: 130%;
+}
+
+video {
+    max-width: 750px;
+    width: 100%;
+}
+
+.title {
+    -ms-flex-line-pack: center;
+    align-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 2vw;
+}
+
+.PicBox {
+    /*  align-items: flex-end;  */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0vw;
+
+}
+
+.contentPage h1 {
+    width: 100%;
+    text-transform: uppercase;
+    font-family: "Intro";
+    font-size: 200%;
+    opacity: 0.5;
+    margin: 0 auto;
+}
+
+.SlideTextFlex {
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    justify-items: center;
+    text-align: start;
+    font-size: 150%;
+    font-weight: 200;
+    max-width: 670px;
+    padding: 2vw;
+    text-indent: 0 !important;
+}
+
+
+
+.title {
+    height: 25vh;
+}
+
+.empty {
+    height: 0;
+}
+
+.PicBox {}
+
+
+
+
+.verticalLine {
+    height: 10vh;
+    width: 3px;
+    background: #ffc000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+
+
+.finalPage {
+    padding: 0;
+}
+
+.verticalLine {
+    height: 3px;
+    max-width: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+
+}
+
+.FinalPic img {
+    max-width: 350px;
+    width: 50%;
+    padding-top: 30%;
+}
+
+
+.name {
+    color: darkred !important;
 }
 
 
@@ -461,6 +638,67 @@ video {
 
 
 
+
+
+/*MEDIA QUARES*/
+@media screen and (max-width:840px) {
+    .parent {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    }
+
+    element.style {
+        width: 100%;
+        text-align: center;
+    }
+
+    .title {
+        -ms-flex-line-pack: center;
+        align-content: center;
+        display: block;
+        text-align: center;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        padding: 2%;
+        height: 30vh;
+    }
+
+    .child {
+        width: 90vw;
+        height: inherit;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+
+    }
+
+
+    .SlideTextFLex {
+        line-height: 1.67;
+        font-size: 21px;
+    }
+
+    .tableCust tr td {
+        padding: 15px !important;
+        font-size: 16px;
+    }
+
+    .child h1 {
+        max-width: 550px;
+        margin: 0 auto;
+        font-size: 150%;
+    }
+
+    text-decoration: none;
+}
 
 
 @media screen and (max-width:720px) {
@@ -579,14 +817,26 @@ video {
     .verticalLine {
         display: none;
     }
-
-   
-}
-
+    .MainScreen  {
+        height: auto;
+        font-size: 14px !important;
+    }
+    .MainScreen h1{
+        font-size: 
+            13px;
+        padding: 0;
+    }
 .mainscreenLogo {
-    padding:10%;
+    padding: 3%;
 }
 
-.name {
-    color: darkred !important;
+    .tableCust tr td {
+    padding: 8px !important;
+    font-size: 13px;
+    
+    
+    
+    
+
 }
+
